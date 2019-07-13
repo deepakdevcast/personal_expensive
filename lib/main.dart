@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import './widgets/transactions_list.dart';
 import './widgets/new_transaction.dart';
 import './models/transaction.dart';
@@ -12,7 +13,14 @@ class MyHomePage extends StatelessWidget {
         title: 'manager',
         theme: ThemeData(
           primarySwatch: Colors.green,
-          accentColor: Colors.purple
+          accentColor: Colors.purple,
+          fontFamily: 'Quicksand',
+          appBarTheme: AppBarTheme(
+            textTheme: ThemeData.light().textTheme.copyWith(
+                  title: TextStyle(fontFamily: 'OpenSans', fontSize: 20,fontWeight: FontWeight.bold),
+                ),
+          ),
+          textTheme: ThemeData.light().textTheme.copyWith(title: TextStyle(fontFamily: 'OpenSans',fontSize: 18,fontWeight: FontWeight.bold),)
         ),
         home: MyApp());
   }
