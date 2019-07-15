@@ -33,18 +33,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final List<Transaction> _userstransactions = [
-    Transaction(
-      id: 't1',
-      title: 'New Shoes',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Weekly Groceries',
-      amount: 45.90,
-      date: DateTime.now(),
-    ),
+
   ];
   void _addNewTransaction(String txtitle, double txamount) {
     final newTx = Transaction(
